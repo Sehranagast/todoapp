@@ -1,9 +1,18 @@
-import TodoApp from "./components/todoApp";
+import { ProductosGrid }  from "./productosGrid";  /* eslint-disable no-unused-vars */
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navb } from "./nav.js"; 
 
-function App() {
-      return (
-        <TodoApp/>
-      );
+
+
+export function App() {
+    return ( 
+    <div>
+        <header>
+            <h1>Productos</h1>
+            <main>
+             <ProductosGrid />
+            </main>
+        </header>
+    </div>
+    );
 }
-
-export default App;
